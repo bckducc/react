@@ -1,0 +1,85 @@
+/*src/components/PunchingIcons.css
+
+/* Container styling */
+.punching-container {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  animation: containerPulse 6s ease-in-out infinite;
+}
+
+/* Icon base styling */
+.icon {
+  position: absolute;
+  bottom: 20px;
+  font-size: 3rem;
+  user-select: none;
+  z-index: 1;
+}
+
+.icon-left {
+  left: 20px;
+}
+
+.icon-right {
+  right: 20px;
+}
+
+/* Continuous subtle pulse on container */
+@keyframes containerPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.02); }
+}
+
+/* Keyframes for kissing motion */
+@keyframes kissLeft {
+  0%   { transform: translateY(0) translateX(0) scale(1); }
+  50%  { transform: translateY(-10px) translateX(20px) scale(1.2); }
+  100% { transform: translateY(0) translateX(0) scale(1); }
+}
+
+@keyframes kissRight {
+  0%   { transform: translateY(0) translateX(0) scale(1); }
+  50%  { transform: translateY(-10px) translateX(-20px) scale(1.2); }
+  100% { transform: translateY(0) translateX(0) scale(1); }
+}
+
+/* Heart bubble effect */
+@keyframes blowKiss {
+  0%   { opacity: 1; transform: translate(0, 0) scale(0.5); }
+  100% { opacity: 0; transform: translate(60px, -60px) scale(1); }
+}
+
+/* Trigger left icon kiss + bubble */
+.punch-left {
+  animation: kissLeft 0.8s ease-out forwards;
+  transform: scaleX(-1) !important;
+  transform: scaleX(1) !important;
+}
+
+/* Mirror left icon when default */
+.flip-left {
+  transform: scaleX(-1) !important;
+}
+
+
+/* .icon-left::after {
+  content: '💋';
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: blowKiss 0.8s ease-out forwards;
+} */
+
+/* Trigger right icon kiss */
+/*.punch-right {    
+    transform: scaleX(-1) !important;
+    animation: kissRight 0.8s ease-out forwards;
+}*/
