@@ -98,7 +98,7 @@ const Contact = () => (
 // Footer
 const Footer = () => (
   <footer className="footer">
-    &copy; {new Date().getFullYear()} Buscucker ĐỼ. All rights reserved.
+    &copy; {new Date().getFullYear()} Buscucker Đức. All rights reserved.
   </footer>
 );
 
